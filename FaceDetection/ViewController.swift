@@ -6,8 +6,6 @@ Contains the main app implementation using Vision.
 */
 
 import UIKit
-import AVKit
-import Vision
 
 class ViewController: UIViewController {
 

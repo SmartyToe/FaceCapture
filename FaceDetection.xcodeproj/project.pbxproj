@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		54DDC5D32315C91500C2E69C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DDC5D22315C91500C2E69C /* AppDelegate.swift */; };
-		54DDC5D52315C91500C2E69C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DDC5D42315C91500C2E69C /* ViewController.swift */; };
-		54DDC5D82315C91500C2E69C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DDC5D62315C91500C2E69C /* Main.storyboard */; };
 		54DDC5DA2315C91700C2E69C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54DDC5D92315C91700C2E69C /* Assets.xcassets */; };
 		54DDC5DD2315C91700C2E69C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DDC5DB2315C91700C2E69C /* LaunchScreen.storyboard */; };
+		54DDC5E62315C95A00C2E69C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DDC5E42315C95A00C2E69C /* Main.storyboard */; };
+		54DDC5E72315C95A00C2E69C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DDC5E52315C95A00C2E69C /* ViewController.swift */; };
+		54DDC5EA2315CA0B00C2E69C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DDC5E82315CA0B00C2E69C /* CameraViewController.swift */; };
+		54DDC5EB2315CA0B00C2E69C /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54DDC5E92315CA0B00C2E69C /* CameraViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		54DDC5CF2315C91500C2E69C /* FaceDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54DDC5D22315C91500C2E69C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		54DDC5D42315C91500C2E69C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		54DDC5D72315C91500C2E69C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54DDC5D92315C91700C2E69C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54DDC5DC2315C91700C2E69C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54DDC5DE2315C91700C2E69C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54DDC5E42315C95A00C2E69C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		54DDC5E52315C95A00C2E69C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		54DDC5E82315CA0B00C2E69C /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		54DDC5E92315CA0B00C2E69C /* CameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				54DDC5D22315C91500C2E69C /* AppDelegate.swift */,
-				54DDC5D42315C91500C2E69C /* ViewController.swift */,
-				54DDC5D62315C91500C2E69C /* Main.storyboard */,
+				54DDC5E42315C95A00C2E69C /* Main.storyboard */,
+				54DDC5E82315CA0B00C2E69C /* CameraViewController.swift */,
+				54DDC5E92315CA0B00C2E69C /* CameraViewController.xib */,
+				54DDC5E52315C95A00C2E69C /* ViewController.swift */,
 				54DDC5D92315C91700C2E69C /* Assets.xcassets */,
 				54DDC5DB2315C91700C2E69C /* LaunchScreen.storyboard */,
 				54DDC5DE2315C91700C2E69C /* Info.plist */,
@@ -122,9 +128,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54DDC5E62315C95A00C2E69C /* Main.storyboard in Resources */,
+				54DDC5EB2315CA0B00C2E69C /* CameraViewController.xib in Resources */,
 				54DDC5DD2315C91700C2E69C /* LaunchScreen.storyboard in Resources */,
 				54DDC5DA2315C91700C2E69C /* Assets.xcassets in Resources */,
-				54DDC5D82315C91500C2E69C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +142,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54DDC5D52315C91500C2E69C /* ViewController.swift in Sources */,
+				54DDC5E72315C95A00C2E69C /* ViewController.swift in Sources */,
 				54DDC5D32315C91500C2E69C /* AppDelegate.swift in Sources */,
+				54DDC5EA2315CA0B00C2E69C /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		54DDC5D62315C91500C2E69C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				54DDC5D72315C91500C2E69C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		54DDC5DB2315C91700C2E69C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,7 +283,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75F94K2BEH;
 				INFOPLIST_FILE = FaceDetection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +302,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75F94K2BEH;
 				INFOPLIST_FILE = FaceDetection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

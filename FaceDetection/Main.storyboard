@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,32 +13,26 @@
         <!--ViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="VisionFaceTrack" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="FaceDetection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G38-HV-Vid">
-                                <rect key="frame" x="0.0" y="227" width="375" height="212"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vuj-KQ-Ak8">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mP4-Op-A0V">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.16410311289999999" green="1" blue="0.23350689120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="G38-HV-Vid" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="207" id="afO-qq-Qok"/>
-                            <constraint firstItem="G38-HV-Vid" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dt2-px-u66"/>
-                            <constraint firstItem="G38-HV-Vid" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="o1a-lg-idx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="G38-HV-Vid" secondAttribute="bottom" constant="228" id="qLZ-nd-kX3"/>
+                            <constraint firstItem="vuj-KQ-Ak8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4YU-Ux-DOI"/>
+                            <constraint firstItem="vuj-KQ-Ak8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cN8-qK-xO6"/>
+                            <constraint firstItem="vuj-KQ-Ak8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="eA6-V0-6F1"/>
+                            <constraint firstItem="vuj-KQ-Ak8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="l59-Fx-7Tt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="captureimage" destination="G38-HV-Vid" id="3Wi-Lh-6OG"/>
-                        <outlet property="previewView" destination="mP4-Op-A0V" id="zS5-gc-9O7"/>
+                        <outlet property="captureImageView" destination="vuj-KQ-Ak8" id="Zvf-a0-ejj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

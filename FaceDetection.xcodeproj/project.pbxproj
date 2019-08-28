@@ -60,9 +60,9 @@
 			children = (
 				54DDC5D22315C91500C2E69C /* AppDelegate.swift */,
 				54DDC5E42315C95A00C2E69C /* Main.storyboard */,
+				54DDC5E52315C95A00C2E69C /* ViewController.swift */,
 				54DDC5E82315CA0B00C2E69C /* CameraViewController.swift */,
 				54DDC5E92315CA0B00C2E69C /* CameraViewController.xib */,
-				54DDC5E52315C95A00C2E69C /* ViewController.swift */,
 				54DDC5D92315C91700C2E69C /* Assets.xcassets */,
 				54DDC5DB2315C91700C2E69C /* LaunchScreen.storyboard */,
 				54DDC5DE2315C91700C2E69C /* Info.plist */,
